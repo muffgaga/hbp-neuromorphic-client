@@ -6,10 +6,9 @@ pipeline {
         git(url: 'https://github.com/cpehle/hbp-neuromorphic-client', branch: 'master')
         sh '''#!/bin/bash
 
-pip install -r requirements.txt'''
-        sh '''#!/bin/bash
-
-nosetests'''
+pip install -r requirements.txt
+nosetests
+'''
       }
     }
   }
