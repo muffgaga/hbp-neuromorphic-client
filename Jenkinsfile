@@ -7,6 +7,9 @@ pipeline {
         sh '''#!/bin/bash
 
 nosetests'''
+        sh '''#!/bin/bash
+
+pip install -r requirements.txt'''
       }
     }
   }
